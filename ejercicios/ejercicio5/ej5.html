@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Punto de Interrupción</title>
+        <meta name="description" content="Se ejecutará en el navegador">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--link rel="stylesheet" href=""-->
+    </head>
+    <body>
+        <h1>Ejercicio 5</h1>
+        <br>
+        <!--Declarar dos variables numéricas (con el valor que desees), mostrar por pantalla la multiplicación de ambas.--> 
+        <script type="text/javascript">
+            let a, b;
+            a = 2; b = 10;
+            
+            resultado = a * b;
+            
+            // texto en negrita y en color rojo
+            document.write(`Variable a contiene: <b><font color='red'> ${a} </font></b> <br>`);
+            document.write(`Variable b contiene: <b><font color='red'> ${b} </font></b> <br>`);
+            document.write(`El producto es: <b><font color='red'> ${resultado} </font></b> <br>`);
+            // Etiqueta de error
+            error = "Error en la ejecución";
+            document.write(`<p><b><font color='red'>${error}</font></b></p>`);
+            // Etiqueta de autodestrucción
+            Fatalerror = "El sistema se autodestruirá en 5 segundos";
+            document.write(`<p><b><font color='red'>${Fatalerror}</font></b></p>`);
+            // Cuenta atrás desde 5 segundos
+            for (let i = 5; i >= 1; i--) {
+                document.write(`<p><b><font color='red'>${i}</font></b></p>`);
+            }
+            // Boom!!!
+            document.write(`<p><b><font color='red'>BOOM!!!</font></b></p>`);
+            
+    </script>
+    <p>Los puntos de Interrupción son fundamentales</p>
+        <!--script src="" async defer></script-->
+    </body>
+</html>
