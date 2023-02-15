@@ -29,10 +29,13 @@ let [Skynet, red, criminal] = ["Es una IA", "Es una red de computadoras", "Es un
 
 console.log(Skynet, criminal); // "Es una IA" "Es una organización criminal"
 
-let introduccion3 = ["Hola", "Yo", "soy", "Sarah", "Connor"]; // Arreglo de 5 elementos
-let carlos3 = ["Hola", "Yo", "soy", "Carlos", "Soto"]; // Arreglo de 5 elementos
+//----------------------------------------------------------------------------------------------------------------------------//
+// Ejercicio en clase por Carlos Soto pregunton
+// Extraer varias prociones de un arreglo en un solo llamado
+
+let carlos = ["Hola", "Yo", "soy", "Carlos", "Soto"];
 
 // slice es un método de los arreglos que permite extraer una porción de un arreglo
-let [llamada1] = [carlos3.slice(2), carlos3.slice(3), carlos3.slice(4)];
+let [llamada] = [carlos.slice(2), carlos3.slice(3), carlos3.slice(4)]; 
 
-console.log(llamada1);
+console.log(llamada); // ["soy", "Carlos", "Soto"]
