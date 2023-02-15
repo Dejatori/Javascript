@@ -28,3 +28,11 @@ console.log(T800, Killer); // "Es un cyborg" "Es un asesino"
 let [Skynet, red, criminal] = ["Es una IA", "Es una red de computadoras", "Es una organización criminal"];
 
 console.log(Skynet, criminal); // "Es una IA" "Es una organización criminal"
+
+let introduccion3 = ["Hola", "Yo", "soy", "Sarah", "Connor"]; // Arreglo de 5 elementos
+let carlos3 = ["Hola", "Yo", "soy", "Carlos", "Soto"]; // Arreglo de 5 elementos
+
+// slice es un método de los arreglos que permite extraer una porción de un arreglo
+let [llamada1] = [carlos3.slice(2), carlos3.slice(3), carlos3.slice(4)];
+
+console.log(llamada1);
