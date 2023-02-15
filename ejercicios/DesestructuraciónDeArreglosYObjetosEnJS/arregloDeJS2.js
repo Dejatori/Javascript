@@ -36,6 +36,16 @@ console.log(Skynet, criminal); // "Es una IA" "Es una organización criminal"
 let carlos = ["Hola", "Yo", "soy", "Carlos", "Soto"];
 
 // slice es un método de los arreglos que permite extraer una porción de un arreglo
-let [llamada] = [carlos.slice(2), carlos3.slice(3), carlos3.slice(4)]; 
+let [llamada] = [carlos.slice(2), carlos.slice(3), carlos.slice(4)]; 
 
 console.log(llamada); // ["soy", "Carlos", "Soto"]
+
+//----------------------------------------------------------------------------------------------------------------------------//
+// Ejercicio en clase por Carlos Soto pregunton (otra solución)
+
+let despedida = ["Adios", "Hasta luego", "Nos vemos"];
+let perguntin = ["¿Como estas?", "¿Como te va?", "¿Como te sientes?"];
+
+let [adios, pregunta] = despedida.concat(perguntin);
+
+console.log(adios, pregunta); // "Adios" "¿Como estas?"
