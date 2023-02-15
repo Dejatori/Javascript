@@ -1,7 +1,12 @@
-let [saludo, pronombre] = ["Hola", "Yo", "soy", "Sarah", "Connor"]; // Desestructuración de arreglos
+let [saludo, pronombre, id, nombre, apellido] = ["Hola", "Yo", "soy", "Sarah", "Connor"]; // Desestructuración de arreglos
 
 console.log(saludo); // "Hola"
 console.log(pronombre); // "Yo"
+console.log(id); // "soy"
+console.log(nombre); // "Sarah"
+console.log(apellido); // "Connor"
+
+console.log(saludo, pronombre, id, nombre, apellido); // "Hola" "Yo" "soy" "Sarah" "Connor"
 
 let [Terminator] = ["Hasta la vista, baby", "I will back", "Dame esa chaqueta"]; 
 
