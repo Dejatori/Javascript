@@ -8,6 +8,11 @@ console.log(apellido); // "Connor"
 
 console.log(saludo, pronombre, id, nombre, apellido); // "Hola" "Yo" "soy" "Sarah" "Connor"
 
+let [saludo2, ...introduccion2] = ["Hola", "Yo", "Sarah", "Connor"];
+
+console.log(saludo2); // "Hola"
+console.log(introduccion2); // ["Yo", "soy", "Sarah", "Connor"]
+
 let [Terminator] = ["Hasta la vista, baby", "I will back", "Dame esa chaqueta"]; 
 
 console.log(Terminator); // "Hasta la vista, baby"
