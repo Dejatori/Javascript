@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <script>
+            
+            let dato, num;
+                dato = window.prompt("Introduce el número ?", "0");
+                num = parseInt(dato);
+            <!-- División, raiz cuadrada, exponencial y exponente -->
+            // Si num es = 0 se termina el programa
+
+            // if (num == 0) {
+            //     document.write("Ha terminado el programa");
+            // } else {
+            //     num = num * 2;
+            //     document.write(`El doble es <font color='red'><b>${num}</font></b>`);
+            //     num = num / 2;
+            //     document.write(`<br>La división del número en 2 es <font color='red'><b>${num}</font></b>`);
+            //     num = Math.sqrt(num);
+            //     document.write(`<br>La raiz cuadrada es <font color='red'><b>${num}</font></b>`);
+            //     num = Math.pow(num, 2);
+            //     document.write(`<br>El número elevado al cuadrado es <font color='red'><b>${num}</font></b>`);
+            // }
+            while (num >= 1) {
+                if (num == 0) {
+                    document.write("Ha terminado el programa");
+                }else
+                {
+                num = num * 2;
+                document.write(`<br>El doble es <font color='red'><b>${num}</font></b><br>`);
+                num = num / 2;
+                document.write(`<br>La división del número en 2 es <font color='red'><b>${num}</font></b><br>`);
+                num = Math.sqrt(num);
+                document.write(`<br>La raiz cuadrada es <font color='red'><b>${num}</font></b><br>`);
+                num = Math.pow(num, 2);
+                document.write(`<br>El número elevado al cuadrado es <font color='red'><b>${num}</font></b><br>`);
+                dato = window.prompt("Introduce el número ?", "0");0               
+                num = parseInt(dato);
+                }
+            }
+
+        </script>
+
+        <p><br>
+            Los números por teclado, son letras. Tiene que convertirse.
+        </p>
+        <script src="" async defer></scriptZ>
+    </body>
+</html>
