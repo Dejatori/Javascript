@@ -3,15 +3,19 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
+        <title>Ejercicio 7</title>
+        <meta name="description" content="Operaciones aritmeticas">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
     </head>
     <body>
         <script>
             let dato;
-                dato = Number(window.prompt("Introduce el número ? o introduce 0 para finalizar el programa", "0"));
+                dato = Number(window.prompt("Introduce el número ?", "0"));                
+                if (dato == 0) {                    
+                    alert("Introduce otro número distinto de 0");
+                }
+                dato = Number(window.prompt("Introduce el número ? o introduce 0 para finalizar el programa" , "0"));
                 // dato = parseInt(dato);
             // División, raiz cuadrada, exponencial, triple, cuadruple, raiz cúbica y exponencial de 3
             // Si dato es = 0 se termina el programa
