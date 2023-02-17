@@ -10,9 +10,8 @@
     </head>
     <body>
         <script>
-            
             let dato, num;
-                dato = window.prompt("Introduce el número ?", "0");
+                dato = window.prompt("Introduce el número ? o introduce 0 para finalizar el programa", "0");
                 num = parseInt(dato);
             <!-- División, raiz cuadrada, exponencial y exponente -->
             // Si num es = 0 se termina el programa
@@ -29,11 +28,8 @@
             //     num = Math.pow(num, 2);
             //     document.write(`<br>El número elevado al cuadrado es <font color='red'><b>${num}</font></b>`);
             // }
-            while (num >= 1) {
-                if (num == 0) {
-                    document.write("Ha terminado el programa");
-                }else
-                {
+            while (num > 0 || num < 0) {
+                if (num >= 1 || num < 0) {
                 num = num * 2;
                 document.write(`<br>El doble es <font color='red'><b>${num}</font></b><br>`);
                 num = num / 2;
@@ -42,13 +38,16 @@
                 document.write(`<br>La raiz cuadrada es <font color='red'><b>${num}</font></b><br>`);
                 num = Math.pow(num, 2);
                 document.write(`<br>El número elevado al cuadrado es <font color='red'><b>${num}</font></b><br>`);
-                dato = window.prompt("Introduce el número ?", "0");0               
+                dato = window.prompt("Introduce el número ? o introduce 0 para finalizar el programa", "0");          
                 num = parseInt(dato);
                 }
+                else
+                {
+                    num = 0;
+                }
             }
-
+            document.write("<br>Ha terminado el programa");
         </script>
-
         <p><br>
             Los números por teclado, son letras. Tiene que convertirse.
         </p>
