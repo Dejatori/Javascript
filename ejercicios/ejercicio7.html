@@ -14,36 +14,23 @@
                 dato = Number(window.prompt("Introduce el número ?", "0"));                
                 if (dato == 0) {                    
                     alert("Introduce otro número distinto de 0");
-                }
-                dato = Number(window.prompt("Introduce el número ? o introduce 0 para finalizar el programa" , "0"));
-                // dato = parseInt(dato);
-            // División, raiz cuadrada, exponencial, triple, cuadruple, raiz cúbica y exponencial de 3
-            // Si dato es = 0 se termina el programa
-
-            // if (dato == 0) {
-            //     document.write("Ha terminado el programa");
-            // } else {
-            //     dato = dato * 2;
-            //     document.write(`El doble es <font color='red'><b>${dato}</font></b>`);
-            //     dato = dato / 2;
-            //     document.write(`<br>La división del número en 2 es <font color='red'><b>${dato}</font></b>`);
-            //     dato = Math.sqrt(dato);
-            //     document.write(`<br>La raiz cuadrada es <font color='red'><b>${dato}</font></b>`);
-            //     dato = Math.pow(dato, 2);
-            //     document.write(`<br>El número elevado al cuadrado es <font color='red'><b>${dato}</font></b>`);
-            // }
-            while (dato > 0 || dato < 0) {
-                if (dato >= 1 || dato < 0) {
-                resultado = dato * 2;
-                document.write(`<br>El doble del número: ${dato} es <font color='red'><b>${resultado}</font></b><br>`);
-                resultado = dato / 2;
-                document.write(`<br>La división del número: ${dato} en 2 es <font color='red'><b>${resultado}</font></b><br>`);
-                resultado = Math.sqrt(dato);
-                document.write(`<br>La raiz cuadrada del número: ${dato} es <font color='red'><b>${resultado}</font></b><br>`);
-                resultado = Math.pow(dato, 2);
-                document.write(`<br>El número: ${dato} elevado al cuadrado es <font color='red'><b>${resultado}</font></b><br>`);
-                dato = Number(window.prompt("Introduce el número ? o introduce 0 para finalizar el programa", "0"));        
-                }
+                    if (dato == 0)
+                    {
+                    dato = Number(window.prompt("Introduce el número ? o introduce 0 para finalizar el programa", "0"));    
+                    while (dato > 0 || dato < 0) {
+                        if (dato >= 1 || dato < 0) {
+                            resultado = dato * 2;
+                            document.write(`<br>El doble del número: ${dato} es <font color='red'><b>${resultado}</font></b><br>`);
+                            resultado = dato / 2;
+                            document.write(`<br>La división del número: ${dato} en 2 es <font color='red'><b>${resultado}</font></b><br>`);
+                            resultado = Math.sqrt(dato);
+                            document.write(`<br>La raiz cuadrada del número: ${dato} es <font color='red'><b>${resultado}</font></b><br>`);
+                            resultado = Math.pow(dato, 2);
+                            document.write(`<br>El número: ${dato} elevado al cuadrado es <font color='red'><b>${resultado}</font></b><br>`);
+                            dato = Number(window.prompt("Introduce el número ? o introduce 0 para finalizar el programa", "0"));        
+                        }
+                    }
+                } 
             }
             document.write("<br>Se ha introducido 0, ha terminado el programa, los datos <b><font color='red'>NaN</b></font> son porque no se puede realizar la operación");
         </script>
