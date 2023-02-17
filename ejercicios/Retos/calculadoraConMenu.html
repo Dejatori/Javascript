@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Menú de Operaciones Matemáticas</title>
+    <meta name="descripción" content="Calculadora de Operaciones Matemáticas">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <!-- mejora el estilo del body, el titulo y agrega estilo para un modo oscuro -->
+    <style>
+        body {
+            background-color: #ffffff;
+            color: #ffa600cc;
+            font-family: sans-serif;
+            font-size: 1em;
+            margin: 0;
+        }
+        h1 {
+            text-align: center;
+            color: #ffa600cc;
+            font-family: sans-serif;
+            font-size: 2em;
+            margin: 0;
+        }
+        body.dark-mode {
+            background-color: #191919;
+            color: #ffffff;
+        }
+        body.dark-mode h1 {
+            color: #ffffff;
+        }
+        body.dark-mode p {
+            color: #ffffff;
+        }
+        body.dark-mode input {
+            background-color: #191919;
+            color: #ffffff;
+        }
+        body.dark-mode select {
+            background-color: #191919;
+            color: #ffffff;
+        }
+        body.dark-mode button {
+            background-color: #191919;
+            color: #ffffff;
+        }
+        body.dark-mode option {
+            background-color: #191919;
+            color: #ffffff;
+        }
+        body.dark-mode label {
+            background-color: #191919;
+            color: #ffffff;
+        }
+    </style>
+
+    <!-- Agregamos un botón para activar o desactivar el modo oscuro -->
+	<button id="toggle-mode-btn">Activar Modo Oscuro</button>
+
+    <script>
+		const toggleModeBtn = document.getElementById('toggle-mode-btn');
+
+		// Agregamos un event listener al botón para cambiar entre el modo oscuro y el modo claro.
+		toggleModeBtn.addEventListener('click', function() {
+			// Cambiamos la clase del elemento <body> para activar o desactivar el modo oscuro.
+			document.body.classList.toggle('dark-mode');
+
+			// Cambiamos el texto del botón para reflejar el estado actual del modo.
+			if (document.body.classList.contains('dark-mode')) {
+				toggleModeBtn.textContent = 'Desactivar Modo Oscuro';
+			} else {
+				toggleModeBtn.textContent = 'Activar Modo Oscuro';
+			}
+		});
+	</script>
+
+	<h1>Menú de Operaciones Matemáticas</h1>
+    <br><br><br>
+    <!-- mejora el estilo del párrafo -->
+    <style>
+        p {
+            text-align: left;
+            color: #003877;
+            font-family: sans-serif;
+            font-size: 1em;
+            margin: 0;
+        }
+    </style>
+    <p>Introduce dos números y selecciona la operación que deseas realizar</p>
+    <br>
+    <p>Al seleccionar "Raiz cuadrada" o "Elevar al cuadrado" solo se tendrá en cuenta el número 1</p>
+
+
+    <!-- Se crea un formulario con un menú desplegable para seleccionar la operación a realizar -->
+	<form id="math-form">
+        <!-- Campos de entrada para los números -->
+        <br><br>
+        <!-- mejora el estilo del label y el input -->
+        <style>
+            label {
+                text-align: left;
+                color: #003877;
+                font-family: sans-serif;
+                font-size: 1em;
+                margin: 0;
+            }
+            input {
+                text-align: left;
+                color: #ffa600cc;
+                font-family: sans-serif;
+                font-size: 1em;
+                margin: 0;
+            }
+        </style>
+		<label for="numero1">Primer número:</label>
+		<input type="number" id="numero1" name="numero1" required>
+
+		<label for="numero2">Segundo número:</label>
+		<input type="number" id="numero2" name="numero2" required>
+
+        <!-- Lista desplegable para seleccionar la operación -->
+        <!-- mejora el estilo de select y option -->
+        <style>
+            select {
+                text-align: left;
+                color: #ffa600cc;
+                font-family: sans-serif;
+                font-size: 1em;
+                margin: 0;
+            }
+            option {
+                text-align: left;
+                color: #ffa600cc;
+                font-family: sans-serif;
+                font-size: 1em;
+                margin: 0;
+            }
+        </style>
+		<label for="operacion">Seleccione una operación:</label>
+		<select id="operacion" name="operacion">
+			<option value="sumar">Sumar</option>
+			<option value="multiplicar">Multiplicar</option>
+			<option value="dividir">Dividir</option>
+			<option value="raizCuadrada">Raíz Cuadrada</option>
+			<option value="exponente">Elevar al Cuadrado</option>
+		</select>          
+            <!-- Botón para enviar el formulario -->
+            <!-- mejora el estilo del botón -->
+            <style>
+                button {
+                    text-align: center;
+                    color: #f14400cc;
+                    font-family: sans-serif;
+                    font-size: 1em;
+                    margin: 0;
+                }
+            </style>
+		<button type="submit">Calcular</button>
+	</form>
+
+    <!-- El resultado se mostrará aquí -->
+	<div id="resultado"></div>
+
+	<script>
+		const mathForm = document.getElementById('math-form');
+		const resultadoDiv = document.getElementById('resultado');
+
+        // Se agrega un event listener al formulario para capturar el envío del formulario y evitar que la página se actualice
+		mathForm.addEventListener('submit', function(event) {
+			event.preventDefault();
+
+            // Se capturan los valores de entrada del usuario y se convierten a números
+			const numero1 = Number(document.getElementById('numero1').value);
+			const numero2 = Number(document.getElementById('numero2').value);
+
+            // Se obtiene la operación seleccionada por el usuario
+			const operacion = document.getElementById('operacion').value;
+			let resultado;
+
+            // Se utiliza un switch statement para determinar qué operación realizar en función de la selección del usuario
+			switch (operacion) {
+				case 'sumar':
+					resultado = numero1 + numero2;
+					break;
+				case 'multiplicar':
+					resultado = numero1 * numero2;
+					break;
+				case 'dividir':
+					resultado = numero1 / numero2;
+					break;
+				case 'raizCuadrada':
+					resultado = Math.sqrt(numero1);
+					break;
+				case 'exponente':
+					resultado = numero1 * numero1;
+					break;
+			}
+
+            // El resultado se almacena en la variable 'resultado' y se muestra en el elemento <div> utilizando la propiedad 'innerHTML'
+            // Se muestra el resultado en el elemento con id resultado
+			resultadoDiv.innerHTML = `<br><br><p>El resultado de la operación es: <font color='red'><b>${resultado}</font><b></p>`;
+		});
+	</script>
+</body>
+</html>
+<!DOCTYPE html>
