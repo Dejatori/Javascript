@@ -1,9 +1,100 @@
+/* Diccionario con los valores de las propiedades */
+
 /* Valores de position */
 /*static: posicion por defecto*/
 /*relative: posicion relativa*/
 /*absolute: posicion absoluta*/
 /*fixed: posicion fija*/
 /*sticky: posicion fija */
+
+/* Valores de margin, padding, border, etc.. /*
+/* px: pixeles */
+/* %: porcentaje */
+/* auto: automatico */
+/* inherit: hereda el valor de la propiedad padre */
+/* initial: valor inicial de la propiedad */
+/* unset: valor inicial de la propiedad */
+
+/* Valores de color */
+/* rgb: red, green, blue */
+/* rgba: red, green, blue, alpha */
+/* hsl: hue, saturation, lightness */
+/* hsla: hue, saturation, lightness, alpha */
+
+/* Valores de font-family */
+/* Arial, Helvetica, sans-serif */
+/* Times New Roman, Times, serif */
+/* Courier New, Courier, monospace */
+/* Georgia, serif */
+/* Verdana, Geneva, sans-serif */
+/* Palatino Linotype, Book Antiqua, Palatino, serif */
+/* Tahoma, Geneva, sans-serif */
+/* Impact, Charcoal, sans-serif */
+/* Comic Sans MS, cursive, sans-serif */
+/* Lucida Sans Unicode, Lucida Grande, sans-serif */
+
+/* Valores de font-size */
+/* xx-small: 9px */
+/* x-small: 10px */
+/* small: 13px */
+/* medium: 16px */
+/* large: 18px */
+/* x-large: 24px */
+/* xx-large: 32px */
+/* smaller: 12px */
+/* larger: 18px */
+
+/* Valores de font-weight */
+/* normal: 400 */
+/* bold: 700 */
+/* bolder: 900 */
+/* lighter: 300 */
+
+/* Valores de font-style */
+/* normal: normal */
+/* italic: cursiva */
+/* oblique: oblicua */
+
+/* Valores de text-align */
+/* left: alineado a la izquierda */
+/* right: alineado a la derecha */
+/* center: centrado */
+/* justify: justificado */
+
+/* Valores de text-decoration */
+/* none: sin decoracion */
+/* underline: subrayado */
+/* overline: sobrescrito */
+/* line-through: tachado */
+
+/* Valores de text-transform */
+/* none: sin transformacion */
+/* capitalize: primera letra en mayuscula */
+/* uppercase: todo en mayuscula */
+/* lowercase: todo en minuscula */
+
+/* Valores de text-indent */
+/* 0: sin sangria */
+/* 1em: sangria de 1em */
+
+/* Valores de text-shadow */
+/* 0 0 0 #000: sin sombra */
+/* 1px 1px 1px #000: sombra de 1px */
+
+/* Valores de text-overflow */
+/* clip: recorta el texto */
+/* ellipsis: pone puntos suspensivos */
+
+/* Valores de text-wrap */
+/* normal: normal */
+/* nowrap: no separa las palabras */
+/* pre: respetar los saltos de linea */
+/* pre-wrap: respetar los saltos de linea y separa las palabras */
+/* pre-line: respetar los saltos de linea y no separa las palabras */
+
+
+/* Valores de padding */
+
 
 @charset "UTF-8";
 
@@ -33,6 +124,11 @@ body {
 .estatua{
     position: absolute;
     right: 0;
-    bottom: -5px;
+    bottom: 5px;
     opacity: 0.6;
+}
+
+@font-face {
+    font-family: font1;
+    src: url(../fonts/Mononoki\ Nerd\ Font\ Complete\ Mono\ Regular.ttf);
 }
