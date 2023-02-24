@@ -100,7 +100,9 @@
 
 *{
     margin: 0;
+    /* margin es la propiedad que define el margen de un elemento */
     padding: 0;
+    /* padding es la propiedad que define el relleno de un elemento */
 }
 
 body {
@@ -115,13 +117,13 @@ body {
 .container {
     width: 1240px;
     min-height: 768px;
-    background: url(../images/) no-repeat;
+    background: url(../images/bg.jpg) no-repeat;
     margin: 50px auto;
     border: 1 px solid #ffffff;
     position: relative;
 }
 
-.estatua{
+.estatua {
     position: absolute;
     right: 0;
     bottom: 5px;
@@ -129,6 +131,32 @@ body {
 }
 
 @font-face {
-    font-family: font1;
+    font-family: Mononoki;
     src: url(../fonts/Mononoki\ Nerd\ Font\ Complete\ Mono\ Regular.ttf);
+}
+
+section {
+    width: 700px;
+    height: 400px;
+    background: rgba(250, 250, 250, 0.5);
+    position: absolute;
+    top: 158px;
+    left: 162px;
+    border-top-left-radius: 38px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border: 3px solid #ffffff;
+}
+
+article {
+    position: absolute;
+    left: 6px;
+    top: 6px;
+    width: 680px;
+    display: none;
+}
+
+article#primero {
+    float: left;
 }
