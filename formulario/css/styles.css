@@ -1,0 +1,120 @@
+@charset "UTF-8";
+/* Define la codificación de caracteres utilizada en el archivo CSS */
+
+/* CSS Document */
+
+/* Importa la fuente FontAwesome desde http://weloveiconfonts.com/api/ */
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+/* Importa la fuente Titan One desde Google Fonts */
+@import url(http://fonts.googleapis.com/css?family=Titan+One);
+
+/* Establece los valores de margen y relleno a cero en todos los elementos */
+*{
+	margin:0;
+	padding:0;
+}
+
+/* Define los estilos para el body del documento */
+body{
+	background:#1b1e24; /* Establece el fondo del cuerpo en un color oscuro */
+	background-image:linear-gradient(to left,#1b1e24,#1b1e24 50%,#1b1e24); /* Crea un efecto degradado en el fondo del body */
+	text-align:center; /* Centra el contenido en el cuerpo */
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif; /* Establece la fuente del cuerpo */
+	font-size:14px; /* Establece el tamaño de la fuente del cuerpo */
+	line-height:1.5em; /* Establece la altura de línea del cuerpo */
+}
+
+/* Define los estilos para todos los elementos que contienen el prefijo
+ "fontawesome-" en su atributo de clase */
+[class*="fontawesome-"]:before{
+	font-family:'FontAwesome', sans-serif;
+	/* Define la fuente utilizada para los iconos de FontAwesome */
+}
+
+/* Define los estilos para todos los elementos de entrada del formulario */
+input{
+	font-size:1em; /* Establece el tamaño de la fuente de los elementos de entrada */
+	line-height:1.5em; /* Establece la altura de línea de los elementos de entrada */
+	-webkit-appearance:none; /* Elimina los estilos predeterminados de los elementos de entrada en WebKit */
+	border:none; /* Elimina los bordes de los elementos de entrada */
+	height:48px; /* Establece la altura de los elementos de entrada */
+	outline:none; /* Elimina el resaltado de los elementos de entrada al enfocar en ellos */
+}
+
+/* Define los estilos para la sección del formulario */
+section{
+	margin:50px auto; /* Establece el margen superior e inferior y el margen lateral automático */
+	width:242px; /* Establece el ancho de la sección */
+}
+
+/* Define los estilos para el icono de usuario */
+section span{
+	color:hsl(5, 50%, 57%); /* Establece el color del icono de usuario */
+	display:block; /* Establece el icono de usuario como un elemento de bloque para que tenga su propia línea */
+	height:48px; /* Establece la altura del icono de usuario */
+	line-height:48px; /* Establece la altura de línea del icono de usuario */
+	position:absolute; /* Establece la posición del icono de usuario como absoluta para que pueda ser posicionado */
+	text-align:center; /* Centra el icono de usuario */
+	width:36px; /* Establece el ancho del icono de usuario */
+}
+
+/* Define los estilos para el icono de usuario */
+input[type="text"], input[type="email"]{
+	background:#fff; /* Establece el fondo del elemento de entrada de texto en blanco */
+	border-top:2px solid #2c90c6; /* Establece el borde superior en un color azul claro */
+	border-right:1px solid #000; /* Establece el borde derecho en un color negro */
+	border-left:1px solid #000; /* Establece e borde izquierdo en un color negro */
+	border-radius:5px 5px 0 0; /* Establece los radios de borde superior izquierdo y derecho en 5px, pero no en la parte inferior */
+	color:#363636; /* Establece el color del texto en gris oscuro */
+	padding-left:36px; /* Establece un relleno a la izquierda del campo de entrada para evitar que el texto se pegue al borde */
+	width:204px; /* Establece la anchura de los campos de entrada de texto y correo electrónico en 204px */
+}
+
+/* Establece el estilo de la entrada de tipo submit */
+input[type="password"]{
+	background:#fff; /* Establece el color de fondo del botón en azul oscuro */
+	border-top:2px solid #2c90c6; /* Establece el borde del botón en azul oscuro */
+	border-right:1px solid #000; /* Establece los radios de borde en 15px */
+	border-left:1px solid #000; /* Establece el color del texto en blanco */
+	border-radius:5px 5px 0 0; /* Establece la fuente en negrita */
+	color:#363636; /* Establece la altura de línea del botón en 48px */
+	padding-left:36px; /* Establece el texto en mayúsculas */
+	width:204px; /* Establece la anchura del botón en 240px */
+	margin-bottom:20px; /* Establece el margen inferior del botón en 20px */
+}
+
+/* Establece el estilo del botón de enviar cuando se mueve el mouse sobre él */
+input[type="submit"]{
+	background-color:#2c90c6; /* Establece el color de fondo del botón en azul oscuro */
+	border:1px solid #2c90c6; /* Establece el borde del botón en azul oscuro */
+	border-radius:15px; /* Establece los radios de borde en 15px */
+	color:#fff; /* Establece el color del texto en blanco */
+	font-weight:bold; /* Establece la fuente en negrita */
+	line-height:48px; /* Establece la altura de línea del botón en 48px */
+	text-align:center; /* Centra el texto del botón */
+	text-transform:uppercase; /* Establece el texto en mayúsculas */
+	width:240px; /* Establece la anchura del botón en 240px */
+}
+
+/* Establece el estilo del botón de enviar cuando se mueve el mouse sobre él */
+input[type="submit"]:hover{
+	background:#2c70c6; /* Establece el color de fondo del botón en azul oscuro */
+	box-shadow:2px 2px 20px #2c90c6; /* Establece la sombra del botón */
+}
+
+/* Establece el estilo de encabezado 1 */
+h1{
+	color:#2c90c6; /* Establece el color del texto en azul oscuro */
+	font-size:40px; /* Establece el tamaño de la fuente en 40px */
+	margin:2% auto; /* Establece el margen superior e inferior en 2% y centrado horizontalmente */
+	text-align:center; /* Establece el alineamiento de texto en el centro */
+	font-family:'Titan One'; /* Establece la fuente en 'Titan One' */
+	text-shadow:1px 2px 1px rgba(0,0,0,0.5); /* Establece una sombra de texto */
+	padding-top:40px; /* Establece un relleno en la parte superior del encabezado para separarlo del contenido debajo */
+}
+
+/* Establece el estilo del encabezado 1 cuando se mueve el mouse sobre él */
+h1:hover{
+	/* Establece una sombra de texto más grande */
+	text-shadow:2px 2px 20px #2c90c6;
+}
