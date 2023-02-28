@@ -16,8 +16,8 @@
 
 /* Define los estilos para el body del documento */
 body{
-	background:#1b1e24; /* Establece el fondo del cuerpo en un color oscuro */
-	background-image:linear-gradient(to left,#1b1e24,#1b1e24 50%,#1b1e24); /* Crea un efecto degradado en el fondo del body */
+	background:#660665; /* Establece el fondo del cuerpo en un color oscuro */
+	background-image:linear-gradient(to left,#640f73,#1b1e24 50%,#5d055a); /* Crea un efecto degradado en el fondo del body */
 	text-align:center; /* Centra el contenido en el cuerpo */
 	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif; /* Establece la fuente del cuerpo */
 	font-size:14px; /* Establece el tamaño de la fuente del cuerpo */
@@ -39,6 +39,29 @@ input{
 	border:none; /* Elimina los bordes de los elementos de entrada */
 	height:48px; /* Establece la altura de los elementos de entrada */
 	outline:none; /* Elimina el resaltado de los elementos de entrada al enfocar en ellos */
+}
+
+/* Define los estilos para el contenedor del formulario */
+.container{
+	display: contents; /* Establece el contenedor como un elemento de bloque para que tenga su propia línea */
+	background:#3c4a83; /* Establece el fondo del contenedor en blanco */
+	border-radius:5px; /* Establece los radios de borde del contenedor en 5px */
+	box-shadow:0 0 1px 1px rgba(110, 3, 3, 0.871); /* Establece una sombra alrededor del contenedor */
+	/* margin:0 auto; Establece el margen automático en el contenedor para centrarlo */
+	position:relative; /* Establece la posición del contenedor como relativa para que pueda ser posicionado */
+	width:800px; /* Establece el ancho del contenedor */
+	height: 800px; /* Establece la altura del contenedor */
+}
+
+/* Define los estilos para el contenedor 2 del formulario */
+.container2{
+	color: blanchedalmond;
+	background:#3c4a83; /* Establece el fondo del contenedor en blanco */
+	border-radius:5px; /* Establece los radios de borde del contenedor en 5px */
+	box-shadow:0 0 1px 1px rgba(110, 3, 3, 0.871); /* Establece una sombra alrededor del contenedor */
+	margin:0 auto; /* Establece el margen automático en el contenedor para centrarlo */
+	position:relative; /* Establece la posición del contenedor como relativa para que pueda ser posicionado */
+	width:300px; /* Establece el ancho del contenedor */
 }
 
 /* Define los estilos para la sección del formulario */

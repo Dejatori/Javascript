@@ -17,17 +17,25 @@
         <!-- Se agrega el encabezado principal de la página -->
         <h1>Registro</h1>
         <!-- Sección principal del formulario -->
-        <section>
-            <!-- Se define el formulario con el método de envío POST y sin una URL de acción específica -->
-            <form method="post" action="">
-            <!-- Se agregan los campos del formulario: usuario, correo electrónico, contraseña y botón de envío -->
-                <span class="fontawesome-user"></span><input type="text" placeholder="Nombre de usuario" name="user" id="user" autocomplete="off" required />
-                <span class="fontawesome-envelope-alt"></span><input type="email" placeholder="Correo electrónico" name="email" id="email" autocomplete="off"/>
-                <span class="fontawesome-lock"></span><input type="password" placeholder="Contraseña" name="password" id="password" autocomplete="off"/>
-                <input type="submit" value="Registrar" id="enviar" />
-                <!-- Se agrega otro campo de contraseña, aunque con el mismo id que el anterior, lo cual puede generar problemas. -->
-                <span class="fontawesome-user"></span><input type="password" placeholder="Contraseña" name="password" id="password" autocomplete="off"/>
-            </form>
-        </section>
+            <section>
+                <div class="contenedor">
+                    <!-- Se define el formulario con el método de envío POST y sin una URL de acción específica -->
+                    <form method="post" action="">
+                        <!-- Se agregan los campos del formulario: usuario, correo electrónico, contraseña y botón de envío -->
+                        <span class="fontawesome-user"></span><input type="text" placeholder="Nombre de usuario" name="user" id="user" autocomplete="off" required />
+                        <span class="fontawesome-envelope-alt"></span><input type="email" placeholder="Correo electrónico" name="email" id="email" autocomplete="off"/>
+                        <span class="fontawesome-lock"></span><input type="password" placeholder="Contraseña" name="password" id="password" autocomplete="off"/>
+                        <input type="submit" value="Registrar" id="enviar" />
+                        <!-- Se agrega otro campo de contraseña, aunque con el mismo id que el anterior, lo cual puede generar problemas. -->
+                        <!-- <span class="fontawesome-user"></span><input type="password" placeholder="Contraseña" name="password" id="password" autocomplete="off"/> -->
+                    </form>
+                </div>
+            </section>
+                
+            <div class="contenedo2">
+                <!-- Se agrega un párrafo con un enlace para redirigir al usuario a la página de inicio de sesión -->
+                <p>¿Ya tienes una cuenta? <a href="login.html">Inicia sesión</a></p>                
+            </div>
+        </div> 
     </body>
 </html>

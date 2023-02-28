@@ -25,7 +25,9 @@ function validacion(){
 	usuario.setCustomValidity('El nombre del usuario es obligatorio');
 	usuario.style.background = '#FFDDDD'; 
 	return false; // Se devuelve 'false' para que no se envíe el formulario.
-	}else{
+	}
+	else
+	{
         // Si el campo no está vacío, se establece el mensaje de error
         // en blanco y se restaura el color de fondo original.
 		usuario.setCustomValidity('');
@@ -39,7 +41,9 @@ function validacion(){
 	email.setCustomValidity('El correo electrónico es obligatorio');
 	email.style.background = '#FFDDDD'; // Se devuelve 'false' para que no se envíe el formulario.
 	return false;
-	}else{
+	}
+	else
+	{
         // Si el campo no está vacío, se establece el mensaje de error
         // en blanco y se restaura el color de fondo original.
 		email.setCustomValidity('');
