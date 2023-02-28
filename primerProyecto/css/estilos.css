@@ -135,6 +135,14 @@ body {
     src: url(../fonts/Mononoki\ Nerd\ Font\ Complete\ Mono\ Regular.ttf);
 }
 
+h1{
+  color:#fff;
+  text-align: center;
+  padding: 110px;
+  font-family: Best_Future_Bold;
+  text-shadow: 1px 1px 3px #000;
+}
+
 section {
     width: 700px;
     height: 400px;
@@ -159,4 +167,69 @@ article {
 
 article#primero {
     float: left;
+}
+
+article p{
+  font-size: 1.1em;
+  line-height: 1.2em;
+  color:#fff;
+  text-shadow: 1px 1px 2px #000;
+  font-family:Momnonoki;
+  src: url(../fonts/Mononoki\ Nerd\ Font\ Complete\ Mono\ Bold.ttf);
+  float:right;
+  width: 385px;
+  margin-bottom: 15px;
+}
+
+article span.verde{
+  color:green;
+}
+article span.naranja{
+  color:orange;
+} 
+article span.amarillo{
+  color:yellow;
+}
+
+nav{
+  width:700px;
+  height:60px;
+  border: 3px solid #fff;
+  position: absolute;
+  left: 162px;
+  top: 565px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 38px;
+  background:rgba(255,255,255,0.3);
+
+}
+nav ul{
+  list-style: none;
+  margin-top: 22px;
+}
+nav ul li{
+  width:33%;
+  float:left;
+  text-align:center;
+  font-family:Mononoki;
+  src: url(../fonts/Mononoki\ Nerd\ Font\ Complete\ Bold\ Italic.ttf);
+}
+nav ul li a:link, nav ul li a:visited {
+    text-decoration:none;
+    border: 1px  #fff  solid;
+    color: #fff;
+    padding: 15px 75px;
+}
+nav ul li:last-child a:link, nav ul li:last-child a:visited {
+  border-top-left-radius: 0px;
+  border-top-right-radius:0px;
+  border-bottom-left-radius:0 ;
+  border-bottom-right-radius:38;
+}
+ 
+nav ul li a:hover{
+  background: #fff;
+  color:#666;
 }
